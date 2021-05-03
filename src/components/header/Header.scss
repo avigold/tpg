@@ -1,0 +1,30 @@
+.combinedHeader {
+  .tpgHeader {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: none;
+
+    .tpgLogo {
+      cursor: pointer;
+      background: url(logo.png) no-repeat;
+      width: 290px;
+      height: 60px;
+      display: inline-block;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .mainMenu {
+      height: 60px;
+      float: right;
+      margin-right: 20px;
+      font-size: 45px;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}
