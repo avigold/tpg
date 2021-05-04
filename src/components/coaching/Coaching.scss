@@ -1,0 +1,20 @@
+.coachingContainer {
+  .pointsForts {
+    flex-grow: 1;
+    .pointFort {
+      box-shadow: none;
+      margin-bottom: 50px;
+      .cardContent {
+        padding-left: 5%;
+        padding-right: 5%;
+        p {
+          font-size: 16px;
+        }
+      }
+      .pointFortImage {
+        background-position-y: 0;
+        height: 1389px;
+      }
+    }
+  }
+}

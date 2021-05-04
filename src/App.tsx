@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'typeface-roboto';
 
 import './App.scss';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './components/header/Header';
+
+import Coaching from './components/coaching/Coaching';
 import Home from './components/home/Home';
+import Join from './components/join/Join';
 
 export default class App extends Component<any> {
     public render() {
         return (
             <BrowserRouter>
-                <Header/>
                 <Switch>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/join">
-                        <Home />
-                    </Route>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/join" component={Join}/>
+                    <Route path="/coaching" component={Coaching}/>
                 </Switch>
             </BrowserRouter>
         );

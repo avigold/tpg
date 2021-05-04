@@ -2,7 +2,7 @@ import Drawer from '@material-ui/core/Drawer/Drawer';
 import List from '@material-ui/core/List/List';
 import ListItem from '@material-ui/core/ListItem/ListItem';
 import ListItemText from '@material-ui/core/ListItemText/ListItemText';
-import React, { Component } from 'react';
+import React, { Component, ReactComponentElement } from 'react';
 import CoachIcon from '@material-ui/icons/SupervisedUserCircle';
 import FitnessIcon from '@material-ui/icons/FitnessCenter';
 import MapIcon from '@material-ui/icons/Map';
@@ -16,7 +16,7 @@ export default class Header extends Component<any> {
         drawerOpen: false
     };
 
-    public render() {
+    public render(): ReactComponentElement<any> {
         return (
             <div className="combinedHeader">
                 <Drawer anchor="right"
@@ -30,24 +30,27 @@ export default class Header extends Component<any> {
                          onKeyDown={() => {this.toggleMenu()}}>
                         <div className="menuBody">
                             <List>
-                                <ListItem button key="membership" onClick={() => {}}>
+                                <ListItem button key="join" onClick={() =>
+                                    NavigationService.goTo(this.props.history, '/join')}>
                                     <FitnessIcon />
                                     <ListItemText primary="&nbsp;&nbsp;Join Us"/>
+                                </ListItem>
+                                <ListItem button key="coaching" onClick={() =>
+                                    NavigationService.goTo(this.props.history, '/coaching')}>
+                                    <CoachIcon />
+                                    <ListItemText primary="&nbsp;&nbsp;Coaching"/>
                                 </ListItem>
                                 <ListItem button key="find" onClick={() => NavigationService.openGymMap()}>
                                     <MapIcon />
                                     <ListItemText primary="&nbsp;&nbsp;Find Us"/>
-                                </ListItem>
-                                <ListItem button key="coaches" onClick={() => {}}>
-                                    <CoachIcon />
-                                    <ListItemText primary="&nbsp;&nbsp;Our Coaches"/>
                                 </ListItem>
                             </List>
                         </div>
                     </div>
                 </Drawer>
                 <div className="tpgHeader">
-                    <span className="tpgLogo" />
+                    <span className="tpgLogo"
+                          onClick={() => NavigationService.goTo(this.props.history, '/')} />
                     <ViewHeadline className="mainMenu" onClick={this.toggleMenu.bind(this)} />
                 </div>
             </div>

@@ -1,0 +1,20 @@
+.joinContainer {
+  background-image: url(haffi.jpg);
+  background-color: whitesmoke;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .joinInner {
+    padding-top: 35%;
+    margin-left: 20px;
+    margin-right: 20px;
+    .pointsForts {
+      flex-grow: 1;
+      .pointFort {
+        background: rgba(0,0,0,0.7);
+        color: white;
+      }
+    }
+  }
+}
