@@ -34,7 +34,7 @@ export default class Home extends Component<any> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                Equipment
+                                                Gym
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 See what we have to offer.
@@ -59,7 +59,7 @@ export default class Home extends Component<any> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                Coaching
+                                                Coach
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 Let us help you succeed.
@@ -68,7 +68,7 @@ export default class Home extends Component<any> {
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" color="primary">
-                                            Learn More
+                                            Get Info
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -84,7 +84,7 @@ export default class Home extends Component<any> {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                Find Us
+                                                Where
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 16B Dalvegur, <a href="tel:+3548220377">☎+3548220377</a>

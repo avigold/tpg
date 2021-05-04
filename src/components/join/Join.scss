@@ -11,6 +11,13 @@
     margin-right: 20px;
     .pointsForts {
       flex-grow: 1;
+
+      @media(max-width: 450px) {
+        h2 {
+          font-size: 14px;
+        }
+      }
+
       .pointFort {
         background: rgba(0,0,0,0.7);
         color: white;

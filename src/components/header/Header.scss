@@ -18,6 +18,17 @@
       transform: translateX(-50%);
     }
 
+    @media(max-width: 450px) {
+      .tpgLogo {
+        transform: translateX(-50%) scale(0.5);
+      }
+
+      .mainMenu {
+        transform: scale(0.5);
+        margin-right: 0px !important;
+      }
+    }
+
     .mainMenu {
       height: 60px;
       float: right;
